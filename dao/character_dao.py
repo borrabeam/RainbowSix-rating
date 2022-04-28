@@ -27,9 +27,9 @@ class CharacterDao:
         self.__session.commit()
         print("Delete success.")
 
-    def update_character(self,id, new_character_name):
+    def update_character(self,id, update_character_name):
         
         find_character = self.__session.query(Character).filter_by(id=id).first()
-        find_character.character_name = new_character_name
+        find_character.character_name = update_character_name
         self.__session.commit()
         print("Updated character name success.")

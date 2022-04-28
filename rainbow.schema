@@ -1,0 +1,15 @@
+
+CREATE TABLE IF NOT EXISTS character (
+    id INTEGER PRIMARY KEY,
+    character_name TEXT NOT NULL,
+    side TEXT NOT NULL,
+    talent TEXT NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS rating (
+    id INTEGER PRIMARY KEY,
+    user_name TEXT NOT NULL,
+    rating TEXT NOT NULL,
+
+    FOREIGN KEY (id) REFERENCES character (id)
+);
