@@ -45,3 +45,8 @@
     ```
 
 
+## Document
+
+[Web Service API](https://github.com/borrabeam/RainbowSix-rating/wiki/Web-Service-API)
+
+
